@@ -1,0 +1,27 @@
+@import '../../Styles/mixins.scss';
+
+.logo{
+    width: 6rem;
+}
+
+
+
+.title{
+    @include font-mixin(600, 1.3rem);
+}
+
+.list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    @include font-mixin(600, 1rem);
+    cursor: pointer;
+
+    &:hover{
+
+        img{
+            filter: invert(100);
+        }
+    }
+}
