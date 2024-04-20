@@ -34,7 +34,7 @@ export default function Navbar() {
 
   return (
     <nav className='sticky top-0 bg-white flex items-center justify-between px-6 gap-x-10 shadow-md'>
-      <Link to={'/'}><div className='flex gap-1 items-center title'><img className='h-20 object-contain' src={logo} />More Lights</div></Link>
+      <Link to='/'><div className='flex gap-1 items-center title'><img className='h-20 object-contain' src={logo} />More Lights</div></Link>
       <ul className='flex gap-4'>
         <div ref={ref} tabIndex={1} onBlur={() => setShowProducts(false)}>
           <li className='py-2 px-4 border-b-2 border-amber-800 rounded-md list hover:bg-amber-800 hover:text-white' onClick={handleShowDropdown}>Products <img className='h-8' src={dropdownIcon} /></li>
