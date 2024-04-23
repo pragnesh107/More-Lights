@@ -1,10 +1,8 @@
 @import '../../Styles/mixins.scss';
 
-.logo{
-    width: 6rem;
+nav{
+    font-family: "Plus Jakarta Sans";
 }
-
-
 
 .title{
     @include font-mixin(600, 1.3rem);
