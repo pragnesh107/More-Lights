@@ -1,26 +1,29 @@
-@import '../../Styles/mixins.scss';
+@import "../../Styles/mixins.scss";
 
-.client-bg{
-    background-color: #F7F7F7 ;
+.client-bg {
+  background-color: #f7f7f7;
 
-    .text{
-        color: #2D3142; 
-        @include font-mixin(700, 2.5rem);
-    }
+  .text {
+    color: #2d3142;
+    @include font-mixin(700, 2.5rem);
+  }
 }
 .places-box {
-    span {
-        color: #a6a4a4;
-        @include font-mixin(700, 3rem);
-    
-        sub{
-            margin-left: 5px;
-        @include font-mixin(500, 1.1rem);
-        }
-        &:not(:first-of-type)::before {
-            content: "|";
-            @include font-mixin(400, 3rem);
-            margin-right: 10px;
-        }
+  span {
+    color: #a6a4a4;
+    @include font-mixin(700, 3rem);
+
+    sub {
+      margin-left: 5px;
+      @include font-mixin(500, 1.1rem);
+      background-size: contain; /* Ensure the background image fits */
+      background-repeat: no-repeat; /* Prevent the image from repeating */
     }
+
+    &:not(:first-of-type)::before {
+      content: "|";
+      @include font-mixin(400, 3rem);
+      margin-right: 10px;
+    }
+  }
 }

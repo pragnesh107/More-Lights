@@ -40,7 +40,7 @@ export default function Navbar() {
           <li className='py-2 px-4 border-b-2 border-amber-800 rounded-md list hover:bg-amber-800 hover:text-white' onClick={handleShowDropdown}>Products <img className='h-8' src={dropdownIcon} /></li>
           {showProducts &&
             <div className='absolute top-20 bg-white shadow-lg'>
-              <div className='py-2 px-4 cursor-pointer hover:bg-amber-800 hover:text-white' onClick={() => { console.log("i called") }}>Printed Ceiling</div>
+              <div className='py-2 px-4 cursor-pointer hover:bg-amber-800 hover:text-white'>Printed Ceiling</div>
               <div className='py-2 px-4 cursor-pointer hover:bg-amber-800 hover:text-white'>Translucent Ceiling</div>
               <div className='py-2 px-4 cursor-pointer hover:bg-amber-800 hover:text-white'>Texture Ceiling</div>
               <div className='py-2 px-4 cursor-pointer hover:bg-amber-800 hover:text-white'>Lacquer Ceiling</div>
@@ -48,8 +48,8 @@ export default function Navbar() {
             </div>
           }
         </div>
-        <li className='py-2 px-4 border-b-2 border-amber-800 rounded-md list hover:bg-amber-800 hover:text-white'><Link to={'/about'}>About</Link></li>
-        <li className='py-2 px-4 border-b-2 border-amber-800 rounded-md list hover:bg-amber-800 hover:text-white'><Link to={'/gallery'}>Gallery</Link></li>
+        <Link to={'/about'} className='py-2 px-4 border-b-2 border-amber-800 rounded-md list hover:bg-amber-800 hover:text-white'><li>About</li></Link>
+        <Link to={'/gallery'} className='py-2 px-4 border-b-2 border-amber-800 rounded-md list hover:bg-amber-800 hover:text-white'><li>Gallery</li></Link>
         <li className='py-2 px-4 border-b-2 border-amber-800 rounded-md list hover:bg-amber-800 hover:text-white'>Contact</li>
       </ul>
     </nav>
